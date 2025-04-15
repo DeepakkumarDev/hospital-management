@@ -18,6 +18,14 @@ DATABASES = {
     }
 }
 
+# settings.py
+
+CSRF_COOKIE_SECURE = True  # Ensure CSRF cookies are only sent over HTTPS (for production)
+CSRF_COOKIE_HTTPONLY = True  # Ensure CSRF cookies are not accessible via JavaScript
+CSRF_TRUSTED_ORIGINS = [
+    'https://hospital-management-production-25a0.up.railway.app',
+]  # Add your production domain here
+
 
 
 DATABASES = {
