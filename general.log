@@ -3,3 +3,11 @@
 2025-04-15 10:59:47,023 (log.py) - django.request - WARNING - Not Found: /api/auth/users/
 2025-04-15 16:10:47,240 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader
 2025-04-15 16:16:15,024 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2025-04-15 18:08:06,200 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2025-04-15 20:18:15,559 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2025-04-15 20:18:23,120 (log.py) - django.request - WARNING - Not Found: /store/products/
+2025-04-15 20:18:23,522 (log.py) - django.request - WARNING - Not Found: /favicon.ico
+2025-04-15 20:18:35,003 (log.py) - django.request - WARNING - Not Found: /do
+2025-04-15 20:18:41,751 (log.py) - django.request - WARNING - Not Found: /doctors/
+2025-04-15 20:19:00,169 (log.py) - django.request - WARNING - Method Not Allowed: /api/signup/
+2025-04-15 20:19:06,625 (log.py) - django.request - WARNING - Bad Request: /api/signup/
