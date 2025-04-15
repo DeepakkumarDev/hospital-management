@@ -3,15 +3,15 @@ WSGI config for healthcare project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
-For more information on this file, see
+For more information, see:
 https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
 """
-import os
 
+import os
 from django.core.wsgi import get_wsgi_application
 from whitenoise import WhiteNoise
 
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'healthcare.settings.dev')
+# Set the default Django settings module for the 'healthcare' project.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'healthcare.settings.prod')
 
 application = get_wsgi_application()

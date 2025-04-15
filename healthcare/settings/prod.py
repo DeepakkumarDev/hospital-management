@@ -1,26 +1,16 @@
-# import os 
-# from . common import *
-
-
-# SECRET_KEY = os.environ['SECRET_KEY']
-
-# DEBUG = False 
-
-# ALLOWED_HOSTS = ['*']
-
-
-
 import os
 from .common import *
 
+# Secret key: fallback for local or dev environments
 SECRET_KEY = os.environ.get('SECRET_KEY', 'fallback-secret-key')
 
+# Disable debug for production
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']  # You can replace '*' with your Railway domain later
+# Allow all hosts (replace '*' with specific domain in real production)
+ALLOWED_HOSTS = ['*']
 
-
-# SQLite database config
+# SQLite database configuration
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -28,12 +18,11 @@ DATABASES = {
     }
 }
 
-# Static files settings
+# Static files configuration
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Required for collectstatic
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Optional, if you have a static/ folder
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # collectstatic will copy here
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Your project's static folder
 
+# WhiteNoise settings (for serving static files in production)
 MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
-
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
