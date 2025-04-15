@@ -11,3 +11,6 @@
 2025-04-15 20:18:41,751 (log.py) - django.request - WARNING - Not Found: /doctors/
 2025-04-15 20:19:00,169 (log.py) - django.request - WARNING - Method Not Allowed: /api/signup/
 2025-04-15 20:19:06,625 (log.py) - django.request - WARNING - Bad Request: /api/signup/
+2025-04-15 20:40:12,261 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2025-04-15 20:42:04,850 (log.py) - django.request - WARNING - Not Found: /s
+2025-04-15 20:42:18,336 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader
