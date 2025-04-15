@@ -1,0 +1,5 @@
+2025-04-15 10:59:18,931 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2025-04-15 10:59:45,773 (log.py) - django.request - WARNING - Not Found: /api/auth/users/
+2025-04-15 10:59:47,023 (log.py) - django.request - WARNING - Not Found: /api/auth/users/
+2025-04-15 16:10:47,240 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2025-04-15 16:16:15,024 (autoreload.py) - django.utils.autoreload - INFO - Watching for file changes with StatReloader

@@ -1,0 +1,4 @@
+.venv/
+.general.log 
+db.sqlite3
+.env
